@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CDDA 辅助工具</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icons/res/org.cataclysmdda.CataclysmDDA.svg</normaloff>:/icons/res/org.cataclysmdda.CataclysmDDA.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>64</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="cdda.qrc">:/cdda/res/org.cataclysmdda.CataclysmDDA.svg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;CDDA辅助工具&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_char">
+          <attribute name="title">
+           <string>角色工具</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>导出角色</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QFrame" name="frame_4">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>选择游戏根目录：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ed_export_charactor_gamefolder"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_select_export_charactor_gamefolder">
+                   <property name="text">
+                    <string>选择游戏根目录</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_5">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QFrame" name="frame_6">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <item>
+                     <widget class="QLabel" name="label_5">
+                      <property name="text">
+                       <string>世界列表</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="list_export_charactor_world_list">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_7">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_7">
+                    <item>
+                     <widget class="QLabel" name="label_6">
+                      <property name="text">
+                       <string>待导出角色列表</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="list_export_char_list">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_8">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QPushButton" name="btn_export_charactor">
+                      <property name="text">
+                       <string>导出</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="title">
+              <string>导入角色(覆盖）</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QFrame" name="frame_15">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>选择游戏根目录：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ed_import_charactor_gamefolder"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_select_import_charactor_gamefolder">
+                   <property name="text">
+                    <string>选择游戏根目录</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_13">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string>选择已导出角色：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ed_import_charactor_filename"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_select_char_template">
+                   <property name="text">
+                    <string>选择已导出角色</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_14">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QCheckBox" name="cb_clearbio">
+                   <property name="text">
+                    <string>清空生化插件</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="cb_clearbook">
+                   <property name="text">
+                    <string>清空已读书籍记录</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="cb_cleartask">
+                   <property name="text">
+                    <string>清除任务</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_9">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QFrame" name="frame_10">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_8">
+                    <item>
+                     <widget class="QLabel" name="label_7">
+                      <property name="text">
+                       <string>世界列表</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="list_import_charactor_world_list">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_11">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item>
+                     <widget class="QLabel" name="label_8">
+                      <property name="text">
+                       <string>待覆盖角色列表</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="list_import_char_list">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_12">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                    <item>
+                     <widget class="QPushButton" name="btn_import_charactor">
+                      <property name="text">
+                       <string>覆盖导入</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_vehicle">
+          <attribute name="title">
+           <string>车辆工具</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="title">
+              <string>导出车辆</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <widget class="QFrame" name="frame_16">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>选择游戏根目录：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ed_export_vehicle_gamefolder"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_select_export_vehicle_gamefolder">
+                   <property name="text">
+                    <string>选择游戏根目录</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_18">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <widget class="QFrame" name="frame_19">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_11">
+                    <item>
+                     <widget class="QLabel" name="label_12">
+                      <property name="text">
+                       <string>世界列表</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="list_export_vehicle_world_list">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_20">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_12">
+                    <item>
+                     <widget class="QLabel" name="label_13">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;提示：&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;需要先在游戏中记录车辆位置（K）&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/cdda/res/record.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="list_export_vehicle_list">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_21">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_19">
+                    <item>
+                     <widget class="QPushButton" name="btn_export_vehicle">
+                      <property name="text">
+                       <string>导出</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string>导入车辆</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QFrame" name="frame_29">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <item>
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>选择游戏根目录：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ed_import_vehicle_gamefolder"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_select_import_vehicle_gamefolder">
+                   <property name="text">
+                    <string>选择游戏根目录</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_30">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_24">
+                   <property name="text">
+                    <string>选择已导出车辆：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="ed_import_vehicle_filename"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_select_vehicle_template">
+                   <property name="text">
+                    <string>选择已导出车辆</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_22">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_19">
+                 <item>
+                  <widget class="QFrame" name="frame_26">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_13">
+                    <item>
+                     <widget class="QLabel" name="label_17">
+                      <property name="text">
+                       <string>世界列表</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="list_import_vehicle_world_list">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_27">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_16">
+                    <item>
+                     <widget class="QLabel" name="label_18">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;车辆导入位置&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;（在附近&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;地表&lt;/span&gt;选一片野外空地，将其坐标输入下方）&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;（如在坐标是城市等复杂地形，游戏将报错）&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;举例：&lt;img src=&quot;:/cdda/res/pos.png&quot;/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;对应：OverMapX:-1, X:155;OverMapY:0, Y:13&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_17">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout">
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_20">
+                         <property name="text">
+                          <string>OverMapX</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLineEdit" name="ed_vehicle_omx">
+                         <property name="inputMethodHints">
+                          <set>Qt::ImhNone</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_21">
+                         <property name="text">
+                          <string>X</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="ed_vehicle_x"/>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_22">
+                         <property name="text">
+                          <string>OverMapY</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="ed_vehicle_omy"/>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_23">
+                         <property name="text">
+                          <string>Y</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="ed_vehicle_y"/>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_28">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_20">
+                    <item>
+                     <widget class="QPushButton" name="btn_import_vehicle">
+                      <property name="text">
+                       <string>导入</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_tweak">
+          <attribute name="title">
+           <string>小优化</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QFrame" name="frame_23">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_14">
+              <item>
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>选择游戏根目录：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="ed_export_vehicle_gamefolder_2"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_select_export_vehicle_gamefolder_2">
+                <property name="text">
+                 <string>选择游戏根目录</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_24">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+     <widget class="QFrame" name="frame_3">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Copyright:2022 MIT License https://oi.0w0.io</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::MarkdownText</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="cdda.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_select_export_charactor_gamefolder</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnSelectExportCharactorGamefolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>589</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>list_export_charactor_world_list</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnExportCharactorWorldChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_export_charactor</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnBtnExportCharactorClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>364</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_select_import_charactor_gamefolder</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnSelectImportCharactorGamefolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>543</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>493</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_select_char_template</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnSelectCharactorTemplate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>640</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>list_import_charactor_world_list</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnImportCharactorWorldChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>798</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>721</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_import_charactor</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnBtnImportCharactorClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>556</x>
+     <y>833</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>720</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_select_export_vehicle_gamefolder</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnSelectExportVehicleGameFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>643</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>list_export_vehicle_world_list</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnExportVehicleWorldChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_export_vehicle</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnBtnExportVehicleClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>646</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_select_import_vehicle_gamefolder</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnSelectImportVehicleGamefolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>569</x>
+     <y>574</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>645</x>
+     <y>631</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_import_vehicle</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnBtnImportVehicleClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>542</x>
+     <y>804</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>642</x>
+     <y>808</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_select_vehicle_template</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnSelectVehicleTemplate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>643</x>
+     <y>600</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnSelectExportCharactorGamefolder()</slot>
+  <slot>OnExportCharactorWorldChange()</slot>
+  <slot>OnBtnExportCharactorClick()</slot>
+  <slot>OnSelectImportCharactorGamefolder()</slot>
+  <slot>OnSelectCharactorTemplate()</slot>
+  <slot>OnImportCharactorWorldChange()</slot>
+  <slot>OnBtnImportCharactorClick()</slot>
+  <slot>OnSelectExportVehicleGameFolder()</slot>
+  <slot>OnExportVehicleWorldChange()</slot>
+  <slot>OnBtnExportVehicleClick()</slot>
+  <slot>OnSelectImportVehicleGamefolder()</slot>
+  <slot>OnImportVehicleWorldChange()</slot>
+  <slot>OnBtnImportVehicleClick()</slot>
+  <slot>OnSelectVehicleTemplate()</slot>
+ </slots>
+</ui>
